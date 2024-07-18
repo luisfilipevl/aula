@@ -27,7 +27,14 @@ class Aluno(Pessoa):
     
     def info_aluno(self):
         print(f"Nome: {self.nome}, Idade: {self.get_idade()}, Matrícula: {self.matricula}")
-
+   
+    def alterar_dados(self):
+        novo_nome = input("Digite o novo nome do aluno: ")
+        nova_idade = int(input("Digite a nova idade do aluno: "))
+        
+        # Modifica os atributos utilizando os métodos setters da classe base (Pessoa)
+        self.nome = novo_nome
+        self.set_idade(nova_idade)
 
 # Testando as classes com interação do usuário
 if _name_ == "_main_":
