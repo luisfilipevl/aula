@@ -29,19 +29,18 @@ class Aluno(Pessoa):
         print(f"Nome: {self.nome}, Idade: {self.get_idade()}, Matrícula: {self.matricula}")
 
 
-# Testando as classes
-if __name__ == "__main__":
+# Testando as classes com interação do usuário
+if _name_ == "_main_":
+    # Criando um objeto da classe Aluno
     aluno1 = Aluno("João", 20, "2021001")
-    print(f"Nome do aluno: {aluno1.nome}")
-    print(f"Matrícula do aluno: {aluno1.matricula}")
     
-
-    print(f"Idade do aluno: {aluno1.get_idade()}")
-    aluno1.set_idade(21)
-    print(f"Nova idade do aluno: {aluno1.get_idade()}")
+    # Exibindo informações iniciais do aluno
+    print("\nInformações iniciais do aluno:")
+    aluno1.info_aluno()
     
-   
-    aluno1.set_senha("minhasenha123")
-    print(f"Senha do aluno: {aluno1.get_senha()}")
+    # Alterando dados do aluno com entrada do usuário
+    aluno1.alterar_dados()
     
+    # Exibindo informações atualizadas do aluno
+    print("\nInformações atualizadas do aluno:")
     aluno1.info_aluno()
