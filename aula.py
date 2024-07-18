@@ -31,24 +31,17 @@ class Aluno(Pessoa):
 
 # Testando as classes
 if __name__ == "__main__":
-    # Criando um objeto da classe Aluno
     aluno1 = Aluno("João", 20, "2021001")
-    
-    # Acessando atributos públicos
     print(f"Nome do aluno: {aluno1.nome}")
     print(f"Matrícula do aluno: {aluno1.matricula}")
     
-    # Acessando atributo protegido e utilizando métodos para modificar
+
     print(f"Idade do aluno: {aluno1.get_idade()}")
     aluno1.set_idade(21)
     print(f"Nova idade do aluno: {aluno1.get_idade()}")
     
-    # Tentando acessar atributo privado diretamente (gera um erro)
-    # print(f"Senha do aluno: {aluno1.__senha}")  # Isso geraria um AttributeError
-    
-    # Acessando atributo privado utilizando método
+   
     aluno1.set_senha("minhasenha123")
     print(f"Senha do aluno: {aluno1.get_senha()}")
     
-    # Utilizando método específico da classe derivada
     aluno1.info_aluno()
