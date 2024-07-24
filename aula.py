@@ -36,18 +36,25 @@ class Aluno(Pessoa):
         self.nome = novo_nome
         self.set_idade(nova_idade)
 
-# Testando as classes com interação do usuário
-if _name_ == "_main_":
+
+# Testando as classes
+if name == "main":
     # Criando um objeto da classe Aluno
     aluno1 = Aluno("João", 20, "2021001")
-    
+    aluno2 = Aluno("Alex", 25, "2021673")
+    aluno3 = Aluno("Rebecca", 22, "2021421")
     # Exibindo informações iniciais do aluno
     print("\nInformações iniciais do aluno:")
     aluno1.info_aluno()
-    
+    aluno2.info_aluno()
+    aluno3.info_aluno()
     # Alterando dados do aluno com entrada do usuário
     aluno1.alterar_dados()
-    
+    aluno2.alterar_dados()
+    aluno3.alterar_dados()
     # Exibindo informações atualizadas do aluno
     print("\nInformações atualizadas do aluno:")
     aluno1.info_aluno()
+    aluno2.info_aluno()
+    aluno3.info_aluno()
+
