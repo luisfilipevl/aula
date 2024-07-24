@@ -37,18 +37,23 @@ class Aluno(Pessoa):
         self.set_idade(nova_idade)
 
 # Testando as classes
-if __name__ == "__main__":
+if name == "main":
+    # Criando um objeto da classe Aluno
     aluno1 = Aluno("João", 20, "2021001")
-    print(f"Nome do aluno: {aluno1.nome}")
-    print(f"Matrícula do aluno: {aluno1.matricula}")
-    
-
-    print(f"Idade do aluno: {aluno1.get_idade()}")
-    aluno1.set_idade(21)
-    print(f"Nova idade do aluno: {aluno1.get_idade()}")
-    
-   
-    aluno1.set_senha("minhasenha123")
-    print(f"Senha do aluno: {aluno1.get_senha()}")
-    
+    aluno2 = Aluno("Alex", 25, "2021673")
+    aluno3 = Aluno("Rebecca", 22, "2021421")
+    # Exibindo informações iniciais do aluno
+    print("\nInformações iniciais do aluno:")
     aluno1.info_aluno()
+    aluno2.info_aluno()
+    aluno3.info_aluno()
+    # Alterando dados do aluno com entrada do usuário
+    aluno1.alterar_dados()
+    aluno2.alterar_dados()
+    aluno3.alterar_dados()
+    # Exibindo informações atualizadas do aluno
+    print("\nInformações atualizadas do aluno:")
+    aluno1.info_aluno()
+    aluno2.info_aluno()
+    aluno3.info_aluno()
+
