@@ -36,6 +36,7 @@ class Aluno(Pessoa):
         self.nome = novo_nome
         self.set_idade(nova_idade)
 
+
 # Testando as classes
 if name == "main":
     # Criando um objeto da classe Aluno
